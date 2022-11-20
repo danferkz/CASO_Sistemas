@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import ttk
 import windows_app.inic as inic
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
@@ -7,8 +6,8 @@ from tkinter import Tk, Label, Button,Entry, Frame, END
     
 
 #* Estructura de la ventana del Dashboard general.
-def nuevo_ventana(root, mainFrame):
-    root.title("Nuevo")
+def nuevo_ventana2(root, mainFrame):
+    root.title("Nuevo2DADADADADAD")
 
     mainFrame.destroy()
     mainFrame = Frame()
