@@ -2,6 +2,7 @@ from tkinter import *
 import windows_app.inic as inic
 import windows_app.INI_SE as se
 import windows_app.HOME as ho
+import windows_app.BIENV as bienv
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
@@ -33,7 +34,7 @@ def REC(root, mainFrame):
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Registrarse", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 100, y = 490)
+    Button(mainFrame, text = "Registrarse", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 100, y = 490)
 
 """
 def recargas(root, mainFrame):
