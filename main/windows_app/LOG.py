@@ -6,21 +6,21 @@ from tkinter import Tk, Label, Button,Entry, Frame, END
     
 
 #* Estructura de la ventana del Dashboard general.
-def recargas(root, mainFrame):
-    root.title("Recargas")
 
+def LOG(root, mainFrame):
+    root.title("LOG IN")
     mainFrame.destroy()
-    mainFrame = Frame()
-    mainFrame.config(width = "480", height = "1034")
+    mainFrame = Frame(root)
+    mainFrame.config(width = "380", height = "676")
     mainFrame.pack()
     my_path = readfiles.Route()
-    
     global logo
-    
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_IN_US_NEW.png"))
-    
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\LOGIN_final.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
-##############################
+    
+    
+    
+    Entry()
     Label(mainFrame, text = "Registro",font=("Inter", 16)).place(x = 300, y = 425)    
     aA_Aa3_3 = StringVar()
     Entry(mainFrame, width = 25, borderwidth = 2, textvariable = aA_Aa3_3,font=("Inter", 30)).place(x = 150, y = 300)
