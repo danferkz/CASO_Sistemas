@@ -1,16 +1,13 @@
 from tkinter import *
 import helpers.readfiles as readfiles
-import windows_app.HOME as ho
-import windows_app.REC_CONT as recp
 import windows_app.BIENV as bienv
-import windows_app.NUEVO_INICIO_REC as nuev_rec
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
     
 
 #* Estructura de la ventana del Dashboard general.
 def NUEV_INIC_REC(root, mainFrame):
-    root.title("Nuevo Inicisio de Sesión")
+    root.title("Nuevo Inicio de Sesión")
 
     mainFrame.destroy()
     mainFrame = Frame()
