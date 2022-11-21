@@ -1,5 +1,6 @@
 from tkinter import *
 import windows_app.HOME as ho
+import windows_app.BIENV as bienv
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
@@ -27,7 +28,7 @@ def LOG(root, mainFrame):
     
 ################################
     
-    Button(mainFrame, text = "Ingresar", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 100, y = 440)
+    Button(mainFrame, text = "Ingresar", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 100, y = 440)
     Button(mainFrame, text = "Olvidé mi contraseña", width = 18, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 80, y = 560)
 
 ################################
