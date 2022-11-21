@@ -22,18 +22,18 @@ def REC(root, mainFrame):
 ###############################
     
     nom = StringVar()
-    Entry(mainFrame, width = 13.5, borderwidth = 2, textvariable = nom, font=("Inter", 25), relief="flat").place(x = 60, y = 185)
+    Entry(mainFrame, width = 14, borderwidth = 2, textvariable = nom, font=("Inter", 22), relief="flat").place(x = 60, y = 182)
     ape = StringVar()
-    Entry(mainFrame, width = 13.5, borderwidth = 2, textvariable = ape, font=("Inter", 25), relief="flat").place(x = 60, y = 285)
+    Entry(mainFrame, width = 14, borderwidth = 2, textvariable = ape, font=("Inter", 22), relief="flat").place(x = 60, y = 260)
     cor = StringVar()
-    Entry(mainFrame, width = 13.5, borderwidth = 2, textvariable = cor, font=("Inter", 25), relief="flat").place(x = 60, y = 385)
+    Entry(mainFrame, width = 14, borderwidth = 2, textvariable = cor, font=("Inter", 22), relief="flat").place(x = 95, y = 340)
     passw = StringVar()
-    Entry(mainFrame, width = 13.5, borderwidth = 2, textvariable = passw, font=("Inter", 25), relief="flat").place(x = 60, y = 485)
+    Entry(mainFrame, width = 14, borderwidth = 2, textvariable = passw, font=("Inter", 22), relief="flat").place(x = 95, y = 410)
     
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Registrarse", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 80, y = 500)
+    Button(mainFrame, text = "Registrarse", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 100, y = 490)
 
 """
 def recargas(root, mainFrame):
