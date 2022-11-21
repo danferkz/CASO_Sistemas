@@ -1,12 +1,12 @@
 from tkinter import *
-import windows_app.inic as inicio
+import windows_app.inic as ini
 import helpers.readfiles as readfiles
 
 #* Estructura general
 root = Tk()
 root.resizable(0,0)
 mainFrame = Frame(root)
-inicio.inici(root, mainFrame)
+ini.Login(root, mainFrame)
 my_path = readfiles.Route()
 root.iconbitmap(my_path + "\main\images\APP.ico")
 

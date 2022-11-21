@@ -1,20 +1,20 @@
 from tkinter import *
-import windows_app.registro as reg
+import windows_app.REG as rec
+import windows_app.LOG as log
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
-from tkinter import Tk, Label, Button,Entry, Frame, END
 
 #* Estructura de la ventana de Inicio.
-def inici(root, mainFrame):
-    root.title("Inicio")
+def Login(root, mainFrame):
+    root.title("LOGIN")
     mainFrame.config(width = "380", height = "676")
     mainFrame.pack()
     my_path = readfiles.Route()
-    global fondo
-    fondo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\INICIO_nue.png"))
+    global logo
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\INICIO_fina.png"))
     
-    Label(mainFrame, image = fondo).place(relx = 0, rely = 0)
+    Label(mainFrame, image = logo).place(relx = 0, rely = 0)
     
     
-    Button(mainFrame, text = "REGISTRAR",width = 15, height = 3,bg="#000000", relief="flat",fg="#ffffff",font=("Inter", 15),command = lambda: reg.registro(root, mainFrame)).place(x = 50, y = 50)
-    #Button(mainFrame, text = "Nueva ventana", width = 15, height = 3,bg="#000000", relief="flat",fg="#ffffff",font=("Inter", 20,"bold"),command = lambda: nue_a.nuevo_ventana(root, mainFrame)).place(relx = 0.36, y = 450)
+    Button(mainFrame, text = "REGISTRO", bg="#767574", width = 10, height = 3, relief="flat",fg="#FFFEFD",font=("Inter", 15,"bold"), command = lambda: rec.REC(root, mainFrame)).place(x = 125, y = 360)
+    Button(mainFrame, text = "INICIAR SESIÓN", bg="#767574", width = 13, height = 3, relief="flat",fg="#FFFEFD",font=("Inter", 15,"bold"), command = lambda: log.LOG(root, mainFrame)).place(x = 110, y = 510)
