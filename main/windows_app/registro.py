@@ -1,6 +1,4 @@
 from tkinter import *
-from tkinter import ttk
-import windows_app.logs as log
 import windows_app.inic as inic
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
@@ -13,13 +11,13 @@ def registro(root, mainFrame):
 
     mainFrame.destroy()
     mainFrame = Frame()
-    mainFrame.config(width = "480", height = "1034")
+    mainFrame.config(width = "380", height = "676")
     mainFrame.pack()
     my_path = readfiles.Route()
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_IN_US_NEW.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_nue.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################
