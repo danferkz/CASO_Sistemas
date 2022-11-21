@@ -33,4 +33,4 @@ def RECUPERA(root, mainFrame):
     Entry(mainFrame, width = 14, borderwidth = 2, textvariable = nuev2, font=("Inter", 22), relief="flat").place(x = 95, y = 415)
     
 ##############################    
-    Button(mainFrame, text = "Continuar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: nuev_rec.NUEV_INIC_REC(root, mainFrame)).place(x = 105, y = 515)
+    Button(mainFrame, text = "Continuar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: nuev_rec.NUEVO_INIC_REC(root, mainFrame)).place(x = 105, y = 515)
