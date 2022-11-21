@@ -1,6 +1,4 @@
 from tkinter import *
-from tkinter import ttk
-import windows_app.logs as log
 import windows_app.inic as inic
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
