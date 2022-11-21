@@ -1,12 +1,11 @@
 from tkinter import *
 import helpers.readfiles as readfiles
-import windows_app.HOME as ho
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
     
 
 #* Estructura de la ventana del Dashboard general.
-def INICIAR(root, mainFrame):
+def HOM(root, mainFrame):
     root.title("Iniciar sesión")
 
     mainFrame.destroy()
@@ -17,7 +16,7 @@ def INICIAR(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\LOGIN_final.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HOME_final.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    
@@ -27,7 +26,8 @@ def INICIAR(root, mainFrame):
     Entry(mainFrame, width = 10, borderwidth = 2, textvariable = ap,font=("Inter", 25)).place(x = 150, y = 200)
     cor = StringVar()
     
+    #Button(mainFrame, text = "Ingresar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: inic.inici(root, mainFrame)).place(x = 100, y = 485)
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Cancelar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 200, y = 600)
+    #Button(mainFrame, text = "Cancelar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: inic.inici(root, mainFrame)).place(x = 200, y = 600)

@@ -1,5 +1,5 @@
 from tkinter import *
-import windows_app.inic as inic
+import windows_app.HOME as ho
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
@@ -28,4 +28,4 @@ def LOG(root, mainFrame):
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Cancelar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: inic.inici(root, mainFrame)).place(x = 300, y = 500)
+    Button(mainFrame, text = "INGRESAR", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 300, y = 500)
