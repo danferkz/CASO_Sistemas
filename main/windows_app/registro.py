@@ -17,7 +17,7 @@ def registro(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_nue.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\UP_REGISTER.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    
