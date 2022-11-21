@@ -16,15 +16,5 @@ def inici(root, mainFrame):
     Label(mainFrame, image = fondo).place(relx = 0, rely = 0)
     
     
-    Button(mainFrame, text = "REGISTRAR",
-           width = 15, height = 3,bg="#000000", 
-           relief="flat",
-           fg="#ffffff",
-           font=("Inter", 15),
-           command = lambda: reg.registro).place(relx = 0.36, y = 850)
-    #Button(mainFrame, text = "Nueva ventana", 
-           #width = 15, height = 3,bg="#000000", 
-           #relief="flat",
-           #fg="#ffffff",
-           #font=("Inter", 20,"bold"),
-           #command = lambda: nue_a.nuevo_ventana(root, mainFrame)).place(relx = 0.36, y = 450)
+    Button(mainFrame, text = "REGISTRAR",width = 15, height = 3,bg="#000000", relief="flat",fg="#ffffff",font=("Inter", 15),command = lambda: reg.registro(root, mainFrame)).place(x = 50, y = 50)
+    #Button(mainFrame, text = "Nueva ventana", width = 15, height = 3,bg="#000000", relief="flat",fg="#ffffff",font=("Inter", 20,"bold"),command = lambda: nue_a.nuevo_ventana(root, mainFrame)).place(relx = 0.36, y = 450)
