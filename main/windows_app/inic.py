@@ -12,7 +12,7 @@ def inici(root, mainFrame):
     mainFrame.pack()
     my_path = readfiles.Route()
     global fondo
-    fondo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\INICIO_nue.png"))
+    fondo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\UP_INICIO.png"))
     
     Label(mainFrame, image = fondo).place(relx = 0, rely = 0)
     
