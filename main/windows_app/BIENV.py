@@ -17,7 +17,7 @@ def BIENVN(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_final.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\BIENVENIDA.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 
