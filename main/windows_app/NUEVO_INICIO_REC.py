@@ -6,7 +6,7 @@ from tkinter import Tk, Label, Button,Entry, Frame, END
     
 
 #* Estructura de la ventana del Dashboard general.
-def NUEV_INIC_REC(root, mainFrame):
+def NUEVO_INIC_REC(root, mainFrame):
     root.title("Nuevo Inicio de Sesión")
 
     mainFrame.destroy()
