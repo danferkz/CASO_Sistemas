@@ -28,6 +28,7 @@ def LOG(root, mainFrame):
     cont = StringVar()
     Entry(mainFrame, width = 14, borderwidth = 2, textvariable = cont, font=("Inter", 22), relief="flat").place(x = 95, y = 320)
     
+    
 ################################
     
     Button(mainFrame, text = "Ingresar", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 100, y = 440)

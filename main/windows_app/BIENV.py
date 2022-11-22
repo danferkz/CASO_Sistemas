@@ -3,7 +3,7 @@ import helpers.readfiles as readfiles
 import windows_app.BIENV as bienv
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
-import windows_app.horario as hora 
+
     
 
 #* Estructura de la ventana del Dashboard general.
