@@ -17,7 +17,7 @@ def INICIAR(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\LOGIN_final.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\LOG_INICIAL.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    

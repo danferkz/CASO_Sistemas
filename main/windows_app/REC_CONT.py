@@ -19,7 +19,7 @@ def RECUPERA(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\RECU_CON.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\RECUPERACIÓN_CONTRA.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 

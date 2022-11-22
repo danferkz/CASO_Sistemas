@@ -17,7 +17,7 @@ def MET_PAGO(root, mainFrame):
     mainFrame.pack()
     my_path = readfiles.Route()
     global logo
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\METODO_PAGO.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\METODO_DE_PAGO.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ###############################
     

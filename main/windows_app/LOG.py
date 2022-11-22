@@ -18,7 +18,7 @@ def LOG(root, mainFrame):
     mainFrame.pack()
     my_path = readfiles.Route()
     global logo
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\LOGIN_ULTIMO.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\LOG_INICIAL.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
     
     
@@ -27,6 +27,7 @@ def LOG(root, mainFrame):
     Entry(mainFrame, width = 14, borderwidth = 2, textvariable = usu, font=("Inter", 22), relief="flat").place(x = 95, y = 245)
     cont = StringVar()
     Entry(mainFrame, width = 14, borderwidth = 2, textvariable = cont, font=("Inter", 22), relief="flat").place(x = 95, y = 320)
+    
     
 ################################
     

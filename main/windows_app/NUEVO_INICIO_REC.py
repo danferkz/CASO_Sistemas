@@ -17,7 +17,7 @@ def NUEVO_INIC_REC(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\CONTRA_LOG.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\INGRESAR.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    

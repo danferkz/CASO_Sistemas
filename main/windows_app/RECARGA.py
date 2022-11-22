@@ -19,7 +19,7 @@ def RECARGA_TRAIN(root, mainFrame):
     mainFrame.pack()
     my_path = readfiles.Route()
     global logo
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\PAYMENT.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\DATOS_RECARGA.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ###############################
     

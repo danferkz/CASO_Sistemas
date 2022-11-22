@@ -19,12 +19,12 @@ def BIENVN(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\BIENVENIDA.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\BIENVENIDA_APP.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 
 ##############################    
-    Button(mainFrame, text = "Siguiente", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: met_pago.MET_PAGO(root, mainFrame)).place(x = 128, y = 560)
+    Button(mainFrame, text = "Siguiente", width = 10,relief="flat",bg = "#FFFFFF",font=("Inter", 15,"bold"), command = lambda: met_pago.MET_PAGO(root, mainFrame)).place(x = 128, y = 560)
 
 
 #*falta ruta home (lambda)
