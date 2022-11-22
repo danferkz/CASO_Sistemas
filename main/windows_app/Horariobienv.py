@@ -7,7 +7,7 @@ from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
 
 #* Estructura de la ventana del Dashboard general.
-def horario(root, mainframe):
+def horario(root, mainFrame):
     root.title("Horarios de líneas de tren")
 
     mainframe.destroy()

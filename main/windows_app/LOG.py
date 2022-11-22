@@ -1,8 +1,6 @@
 from tkinter import *
-import windows_app.HOME as ho
-import windows_app.BIENV as bienv
 import windows_app.REC_CONT as recp_con
-import windows_app.NUEVO_INICIO_REC as nuevo_rec
+import windows_app.BIENV as bienv
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
