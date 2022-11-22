@@ -10,7 +10,7 @@ from tkinter import Tk, Label, Button,Entry, Frame, END
 #* Estructura de la ventana del Dashboard general.
 
 def horaMAÑANA(root, mainFrame):
-    root.title("RESERVA")
+    root.title("Horarios de líneas de tren")
     mainFrame.destroy()
     mainFrame = Frame(root)
     mainFrame.config(width = "380", height = "676")
