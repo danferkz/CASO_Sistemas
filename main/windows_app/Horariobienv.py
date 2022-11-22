@@ -10,16 +10,16 @@ from tkinter import Tk, Label, Button,Entry, Frame, END
 def horario(root, mainFrame):
     root.title("Horarios de líneas de tren")
 
-    mainframe.destroy()
-    mainframe = Frame()
-    mainframe.config(width = "380", height = "676")
-    mainframe.pack()
+    mainFrame.destroy()
+    mainFrame = Frame()
+    mainFrame.config(width = "380", height = "676")
+    mainFrame.pack()
     my_path = readfiles.Route()
 
     global logo, vaerDropBox
     
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO.png"))
     
-    Label(mainframe, image = logo).place(relx = 0, rely = 0)
+    Label(mainFrame, image = logo).place(relx = 0, rely = 0)
     
     #* Función para cerrar y destruir la ventana al cerrar la aplicación externamente.

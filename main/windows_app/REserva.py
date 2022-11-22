@@ -1,6 +1,4 @@
 from tkinter import *
-import windows_app.RECARGA as reca
-import windows_app.RECARGA as recar_train
 import windows_app.HOME as home
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
