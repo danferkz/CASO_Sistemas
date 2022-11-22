@@ -20,14 +20,14 @@ def horario(root, mainFrame):
 
     global logo, vaerDropBox
 
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_BIENVENIDA.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO1.png"))
 
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ############################## 
     categoriesNUMEROSvar = ['Dia', 'Tarde', 'Noche']
     Label(mainFrame, text = "Seleccion de fase de Dia", relief= "flat", bg="#767574", font=("Inter", 10)).place(x = 100, y = 300)
     vaerDropBox= ttk.Combobox(mainFrame,font=("Inter", 16,"bold"),width = 10)
-    vaerDropBox.set("variables")
+    vaerDropBox.set("Dia")
     vaerDropBox["values"]  = categoriesNUMEROSvar
     vaerDropBox.place(x = 100, y = 350)
     
