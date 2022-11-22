@@ -8,30 +8,30 @@ from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
 
 
-def horario(root, mainframe):
+def horario(root, mainFrame):
     root.title("Horarios de líneas de tren")
 
-    mainframe.destroy()
-    mainframe = Frame()
-    mainframe.config(width = "380", height = "676")
-    mainframe.pack()
+    mainFrame.destroy()
+    mainFrame = Frame()
+    mainFrame.config(width = "380", height = "676")
+    mainFrame.pack()
     my_path = readfiles.Route()
 
     global logo, vaerDropBox
 
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_BIENVENIDA.png"))
 
-    Label(mainframe, image = logo).place(relx = 0, rely = 0)
+    Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ############################## 
     categoriesNUMEROSvar = ['Dia', 'Tarde', 'Noche']
-    Label(mainframe, text = "Seleccion de fase de Dia", relief= "flat", bg="#767574", font=("Inter", 10)).place(x = 100, y = 300)
-    vaerDropBox= ttk.Combobox(mainframe,font=("Inter", 16,"bold"),width = 10)
+    Label(mainFrame, text = "Seleccion de fase de Dia", relief= "flat", bg="#767574", font=("Inter", 10)).place(x = 100, y = 300)
+    vaerDropBox= ttk.Combobox(mainFrame,font=("Inter", 16,"bold"),width = 10)
     vaerDropBox.set("variables")
     vaerDropBox["values"]  = categoriesNUMEROSvar
     vaerDropBox.place(x = 100, y = 350)
     
     
-    Button(mainframe, text = "FORMAR TABLAS", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 100, y = 400)
+    Button(mainFrame, text = "FORMAR TABLAS", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 100, y = 400)
     
 
 
