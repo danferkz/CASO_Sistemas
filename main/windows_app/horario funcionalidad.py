@@ -48,4 +48,6 @@ def Selec_Rooty():
         "dos_cua.pantalla4x4(root, mainFrame)"
     
 
-# 
+#* Botón desplegable de las fases del día del horario
+
+var= tk.StringVar(root)
