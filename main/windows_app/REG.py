@@ -31,8 +31,6 @@ def REC(root, mainFrame):
     passw = StringVar()
     Entry(mainFrame, width = 14, borderwidth = 2, textvariable = passw, font=("Inter", 22), relief="flat").place(x = 95, y = 410)
     
-    Checkbutton
-    
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
