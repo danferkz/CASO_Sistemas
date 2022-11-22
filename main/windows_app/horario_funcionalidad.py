@@ -42,11 +42,11 @@ def Selec_Rooty():
     my_path = readfiles.Route()
     
     if a == 'Dia':
-        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO (mañana).png"))
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_(mañana).png"))
     elif a == 'Tarde':
-        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO (tarde).png"))
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_(tarde).png"))
     else:
-        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO (noche).png"))
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_(noche).png"))
     
 
 
