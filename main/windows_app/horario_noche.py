@@ -37,7 +37,20 @@ def horaNOCHE(root, mainFrame):
     global logo
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO3.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
-###############################
+    
+    categoriesNUMEROSvar = ['Dia', 'Tarde', 'Noche']
+    Label(mainFrame, text = "Seleccion de fase de Dia", relief= "flat", bg="#EFFBFB", font=("Inter", 10)).place(x = 100, y = 300)
+    vaerDropBox= ttk.Combobox(mainFrame,font=("Inter", 16,"bold"),width = 10)
+    vaerDropBox.set("Fases del Día")
+
+    vaerDropBox.set("Dia")
+    vaerDropBox["values"]  = categoriesNUMEROSvar
+    vaerDropBox.place(x = 100, y = 350)
+    
+    
+    Button(mainFrame, text = "Continuar", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 100, y = 400)
+
+    Button(mainFrame, text = "Continuar", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty(root, mainFrame)).place(x = 100, y = 400)
 
 #RUTAS
 def Selec_Rooty(root, mainFrame):
