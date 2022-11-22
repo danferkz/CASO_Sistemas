@@ -3,10 +3,11 @@ from tkinter import ttk
 import windows_app.RECARGA as reca
 import windows_app.RECARGA as recar_train
 import helpers.readfiles as readfiles
+import windows_app.horario_tarde as tarde
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
 
-def horario(root, mainFrame):
+def horaTARDE(root, mainFrame):
     root.title("Horarios de líneas de tren")
     mainFrame.destroy()
     mainFrame = Frame()
