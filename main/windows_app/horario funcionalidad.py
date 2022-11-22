@@ -20,7 +20,7 @@ def horario(root, mainframe):
 
     global logo, vaerDropBox
 
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_FUNCIONALIDAD_final.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO (mañana).png"))
 
     Label(mainframe, image = logo).place(relx = 0, rely = 0)
 ############################## 
@@ -50,4 +50,4 @@ def Selec_Rooty():
 
 #* Botón desplegable de las fases del día del horario
 
-var= tk.StringVar(root)
+
