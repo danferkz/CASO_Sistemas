@@ -10,7 +10,7 @@ ini.Login(root, mainFrame)
 my_path = readfiles.Route()
 root.iconbitmap(my_path + "\main\images\APP.ico")
 
-
+#* Función para cerrar y destruir la ventana al cerrar la aplicación externamente.
 def quit_me():
     root.quit()
     root.destroy()

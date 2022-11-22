@@ -1,3 +1,4 @@
+
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox as MessageBox
@@ -6,7 +7,7 @@ import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
 
-#* Estructura de la ventana del Dashboard general.
+
 def horario(root, mainframe):
     root.title("Horarios de líneas de tren")
 
@@ -18,7 +19,7 @@ def horario(root, mainframe):
 
     global logo, vaerDropBox
 
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_FUNCIONALIDAD_final.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_BIENVENIDA.png"))
 
     Label(mainframe, image = logo).place(relx = 0, rely = 0)
 ############################## 
@@ -45,5 +46,3 @@ def Selec_Rooty():
     else:
         "dos_cua.pantalla4x4(root, mainFrame)"
     
-
-#* Estructura de la ventana del Dashboard general.
