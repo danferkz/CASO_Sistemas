@@ -15,6 +15,8 @@ def quit_me():
     root.quit()
     root.destroy() 
     
+    
+    
 
 root.protocol("WM_DELETE_WINDOW", quit_me)
 root.mainloop()

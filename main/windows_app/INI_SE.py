@@ -19,6 +19,8 @@ def INICIAR(root, mainFrame):
     
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\LOG_INICIAL.png"))
     
+    
+    
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    
     nom = StringVar()
