@@ -1,6 +1,6 @@
 from tkinter import *
 import helpers.readfiles as readfiles
-import windows_app.HOME as ho
+import windows_app.BIENV as bienv
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
 
@@ -30,4 +30,4 @@ def INICIAR(root, mainFrame):
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Cancelar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 200, y = 600)
+    Button(mainFrame, text = "Cancelar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 200, y = 600)

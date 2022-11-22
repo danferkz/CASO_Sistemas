@@ -1,7 +1,6 @@
 from tkinter import *
-import windows_app.BIENV as bienv
 import windows_app.RECARGA as recar_train
-import windows_app.METODO_PAGO as met_pago
+import windows_app.HOME as ho
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
@@ -22,14 +21,17 @@ def MET_PAGO(root, mainFrame):
 ###############################
     
     visa = StringVar()
-    Checkbutton(mainFrame, textvariable = visa, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 30, y = 240)
+    Checkbutton(mainFrame, textvariable = visa, bg="#FFFFFF",font=("Inter", 22), relief="flat").place(x = 45, y = 260)
     mastercard = StringVar()
-    Checkbutton(mainFrame, textvariable = mastercard, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 180, y = 240)
+    Checkbutton(mainFrame, textvariable = mastercard, bg="#FFFFFF",font=("Inter", 22), relief="flat").place(x = 198, y = 260)
     dinners = StringVar()
-    Checkbutton(mainFrame, textvariable = dinners, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 30, y = 340)
+    Checkbutton(mainFrame, textvariable = dinners, bg="#FFFFFF",font=("Inter", 22), relief="flat").place(x = 45, y = 360)
     american = StringVar()
-    Checkbutton(mainFrame, textvariable = american, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 180, y = 340)
+    Checkbutton(mainFrame, textvariable = american, bg="#FFFFFF",font=("Inter", 22), relief="flat").place(x = 198, y = 360)
+    condi = StringVar()
+    Checkbutton(mainFrame, textvariable = condi, bg="#FFFFFF",font=("Inter", 22), relief="flat").place(x = 52, y = 455)
     
 ################################
     
-    Button(mainFrame, text = "Siguiente", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: met_pago.MET_PAGO(root, mainFrame)).place(x = 125, y = 540)
+    Button(mainFrame, text = "Siguiente", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: recar_train.RECARGA_TRAIN(root, mainFrame)).place(x = 125, y = 540)
+    Button(mainFrame, text = "Regresar", width = 8, bg="#FFFEFD", relief="flat",font=("Inter", 13,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 10, y = 15)

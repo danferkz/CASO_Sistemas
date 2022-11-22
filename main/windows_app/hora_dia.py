@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import ttk
 import windows_app.RECARGA as reca
-import windows_app.RECARGA as recar_train
 import helpers.readfiles as readfiles
 import windows_app.hora_dia as dia
 import windows_app.horario_tarde as tarde

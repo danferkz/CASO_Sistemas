@@ -24,10 +24,10 @@ def HOM(root, mainFrame):
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    
-    Button(mainFrame, text = "HORARIO", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: hora.horario(root, mainFrame)).place(x = 125, y = 200)
-    Button(mainFrame, text = "RECARGA", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: rebien.BIEN_REc(root, mainFrame)).place(x = 125, y = 250)
-    Button(mainFrame, text = "NOTIFICACIONES", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: noti.VisNo_otifica(root, mainFrame)).place(x = 125, y = 300)
-    Button(mainFrame, text = "RESERVA", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: reser.RESERVA(root, mainFrame)).place(x = 125, y = 350)
+    Button(mainFrame, text = "HORARIO", width = 15,relief="flat",bg = "#03989e", font=("Inter", 15,"bold"), command = lambda: hora.horario(root, mainFrame)).place(x = 95, y = 145)
+    Button(mainFrame, text = "RECARGA", width = 15,relief="flat",bg = "#03989e", font=("Inter", 15,"bold"), command = lambda: rebien.BIEN_REC(root, mainFrame)).place(x = 95, y = 265)
+    Button(mainFrame, text = "NOTIFICACIONES", width = 15,relief="flat",bg = "#03989e", font=("Inter", 15,"bold"), command = lambda: noti.VisNo_otifica(root, mainFrame)).place(x = 95, y = 400)
+    Button(mainFrame, text = "RESERVA", width = 15,relief="flat",bg = "#03989e", font=("Inter", 15,"bold"), command = lambda: reser.RESERVA(root, mainFrame)).place(x = 95, y = 530)
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
