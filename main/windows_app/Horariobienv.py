@@ -1,5 +1,7 @@
 from tkinter import *
-import windows_app.horario as inic
+from tkinter import ttk
+from tkinter import messagebox as MessageBox
+import windows_app.LOG as log
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
@@ -10,15 +12,12 @@ def horario(root, mainframe):
 
     mainframe.destroy()
     mainframe = Frame()
-    mainframe.config(width = "480", height = "1034")
+    mainframe.config(width = "380", height = "676")
     mainframe.pack()
     my_path = readfiles.Route()
 
-    global logo
-
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_IN_US_NEW.png"))
-
-    Label(mainframe, image = logo).place(relx = 0, rely = 0)
-############################## 
-    Label(mainframe, text = "")
+    global logo, vaerDropBox
     
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO.png"))
+    
+    Label(mainframe, image = logo).place(relx = 0, rely = 0)
