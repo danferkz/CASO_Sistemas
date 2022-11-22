@@ -27,12 +27,20 @@ def horario(root, mainFrame):
     categoriesNUMEROSvar = ['Dia', 'Tarde', 'Noche']
     Label(mainFrame, text = "Seleccion de fase de Dia", relief= "flat", bg="#767574", font=("Inter", 10)).place(x = 100, y = 300)
     vaerDropBox= ttk.Combobox(mainFrame,font=("Inter", 16,"bold"),width = 10)
+<<<<<<< HEAD:main/windows_app/horario_manana.py
+    vaerDropBox.set("variables")
+=======
     vaerDropBox.set("Dia")
+>>>>>>> 0e1b0e771109da4851f8b8c5000342394d26996c:main/windows_app/horario_select.py
     vaerDropBox["values"]  = categoriesNUMEROSvar
     vaerDropBox.place(x = 100, y = 350)
     
     
+<<<<<<< HEAD:main/windows_app/horario_manana.py
+    Button(mainFrame, text = "FORMAR TABLAS", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 100, y = 400)
+=======
     Button(mainFrame, text = "FORMAR TABLAS", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty(root, mainFrame)).place(x = 100, y = 400)
+>>>>>>> 0e1b0e771109da4851f8b8c5000342394d26996c:main/windows_app/horario_select.py
     
 
 
