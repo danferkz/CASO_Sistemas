@@ -43,15 +43,3 @@ def Selec_Rooty(root, mainFrame):
         tarde.horaTARDE(root, mainFrame)
     else:
         noche.horaNOCHE(root, mainFrame)
-
-
-#RUTAS
-def Selec_Rooty(root, mainFrame):
-    a = vaerDropBox.get()
-    
-    if a == 'Dia':
-        dia.horaMAÑANA(root, mainFrame)
-    elif a == 'Tarde':
-        tarde.horaTARDE(root, mainFrame)
-    else:
-        noche.horaNOCHE(root, mainFrame)
