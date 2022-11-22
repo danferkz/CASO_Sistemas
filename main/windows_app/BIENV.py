@@ -1,9 +1,10 @@
 from tkinter import *
 import helpers.readfiles as readfiles
 import windows_app.BIENV as bienv
+import windows_app.METODO_PAGO as met_pago
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
-import windows_app.horario as hora 
+
     
 
 #* Estructura de la ventana del Dashboard general.
@@ -23,7 +24,7 @@ def BIENVN(root, mainFrame):
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 
 ##############################    
-    Button(mainFrame, text = "Siguiente", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: hora.horario(root, mainFrame)).place(x = 128, y = 560)
+    Button(mainFrame, text = "Siguiente", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: met_pago.MET_PAGO(root, mainFrame)).place(x = 128, y = 560)
 
 
 #*falta ruta home (lambda)
