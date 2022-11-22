@@ -5,6 +5,8 @@ import windows_app.LOG as log
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
+import tkinter as tk
+
 
 #* Estructura de la ventana del Dashboard general.
 def horario_BIEN(root, mainframe):
@@ -18,32 +20,39 @@ def horario_BIEN(root, mainframe):
 
     global logo, vaerDropBox
 
+<<<<<<< HEAD
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_BIENVENIDA.png"))
+=======
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO.png"))
+>>>>>>> b76de1c5fef8965baf11e00cb6dd3e71faa6b719
 
     Label(mainframe, image = logo).place(relx = 0, rely = 0)
-############################## 
+
     categoriesNUMEROSvar = ['Dia', 'Tarde', 'Noche']
-    Label(mainframe, text = "Seleccion de fase de Dia", relief= "flat", bg="#767574", font=("Inter", 10)).place(x = 100, y = 300)
+    Label(mainframe, text = "Seleccion de fases del Dia", relief= "flat", bg="#767574", font=("Inter", 10)).place(x = 100, y = 300)
     vaerDropBox= ttk.Combobox(mainframe,font=("Inter", 16,"bold"),width = 10)
     vaerDropBox.set("variables")
     vaerDropBox["values"]  = categoriesNUMEROSvar
     vaerDropBox.place(x = 100, y = 350)
     
     
-    Button(mainframe, text = "FORMAR TABLAS", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 100, y = 400)
+    Button(mainframe, text = "Continuar", width = 15,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 90, y = 350)
     
 
 
 #RUTAS
 def Selec_Rooty():
     a = vaerDropBox.get()
+    my_path = readfiles.Route()
     
     if a == 'Dia':
-        "dos_cua.pantalla4x4(root, mainFrame)"
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_(mañana).png"))
     elif a == 'Tarde':
-        "dos_cua.pantalla4x4(root, mainFrame)"
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_(tarde).png"))
     else:
-        "dos_cua.pantalla4x4(root, mainFrame)"
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_(noche).png"))
     
 
-#* Estructura de la ventana del Dashboard general.
+
+
+
