@@ -1,7 +1,6 @@
 from tkinter import *
 import windows_app.RECARGA as reca
 import windows_app.RECARGA as recar_train
-import windows_app.HOME as home
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
@@ -9,7 +8,7 @@ from tkinter import Tk, Label, Button,Entry, Frame, END
 
 #* Estructura de la ventana del Dashboard general.
 
-def RESERVA(root, mainFrame):
+def horaMAÑANA(root, mainFrame):
     root.title("RESERVA")
     mainFrame.destroy()
     mainFrame = Frame(root)
@@ -17,7 +16,7 @@ def RESERVA(root, mainFrame):
     mainFrame.pack()
     my_path = readfiles.Route()
     global logo
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\is_RESERVA1.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO1.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ###############################
 
@@ -25,4 +24,4 @@ def RESERVA(root, mainFrame):
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Regresar", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: home.HOM(root, mainFrame)).place(x = 100, y = 490)
+    Button(mainFrame, text = "Registrarse", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: reca.RECARGA_TRAIN(root, mainFrame)).place(x = 100, y = 490)

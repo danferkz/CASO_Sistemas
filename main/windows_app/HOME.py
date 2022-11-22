@@ -1,6 +1,6 @@
 from tkinter import *
 import helpers.readfiles as readfiles
-import windows_app.horario_funcionalidad as hora
+import windows_app.horario_select as hora
 import windows_app.bien_rec as rebien
 import windows_app.Notifica_c as noti
 import windows_app.REserva as reser
@@ -24,7 +24,7 @@ def HOM(root, mainFrame):
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    
-    Button(mainFrame, text = "HORARIO", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: hora.horario_BIEN(root, mainFrame)).place(x = 125, y = 200)
+    Button(mainFrame, text = "HORARIO", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: hora.horario(root, mainFrame)).place(x = 125, y = 200)
     Button(mainFrame, text = "RECARGA", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: rebien.BIEN_REc(root, mainFrame)).place(x = 125, y = 250)
     Button(mainFrame, text = "NOTIFICACIONES", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: noti.VisNo_otifica(root, mainFrame)).place(x = 125, y = 300)
     Button(mainFrame, text = "RESERVA", width = 20,relief="flat",font=("Inter", 15,"bold"), command = lambda: reser.RESERVA(root, mainFrame)).place(x = 125, y = 350)
