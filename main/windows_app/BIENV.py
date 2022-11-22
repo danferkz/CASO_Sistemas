@@ -26,4 +26,4 @@ def BIENVN(root, mainFrame):
     Button(mainFrame, text = "Siguiente", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: hora.horario(root, mainFrame)).place(x = 128, y = 560)
 
 
-lambda#*falta ruta home
+#*falta ruta home (lambda)
