@@ -21,3 +21,5 @@ def horario(root, mainframe):
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO.png"))
     
     Label(mainframe, image = logo).place(relx = 0, rely = 0)
+    
+    #* Función para cerrar y destruir la ventana al cerrar la aplicación externamente.
