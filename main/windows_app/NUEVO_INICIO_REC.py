@@ -17,17 +17,17 @@ def NUEVO_INIC_REC(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_final.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\CONTRA_LOG.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 ##############################    
-    nom = StringVar()
-    Entry(mainFrame, width = 10, borderwidth = 2, textvariable = nom,font=("Inter", 25),relief="flat").place(x = 150, y = 100)
-    ap = StringVar()
-    Entry(mainFrame, width = 10, borderwidth = 2, textvariable = ap,font=("Inter", 25)).place(x = 150, y = 200)
+    email = StringVar()
+    Entry(mainFrame, width = 12, borderwidth = 2, textvariable = email,font=("Inter", 25),relief="flat").place(x = 100, y = 240)
+    contra = StringVar()
+    Entry(mainFrame, width = 12, borderwidth = 2, textvariable = contra,font=("Inter", 25),relief="flat").place(x = 100, y = 318)
     
     
 ################################
     
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Ingresar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 200, y = 600)
+    Button(mainFrame, text = "Ingresar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 100, y = 440)

@@ -1,8 +1,8 @@
 from tkinter import *
 import helpers.readfiles as readfiles
 import windows_app.BIENV as bienv
-import windows_app.REC_CONT as recp
-import windows_app.NUEVO_INICIO_REC as nuev_rec
+import windows_app.REC_CONT as recp_con
+import windows_app.NUEVO_INICIO_REC as nuevo_rec
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
     
@@ -19,7 +19,7 @@ def RECUPERA(root, mainFrame):
     
     global logo
     
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_final.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\RECU_CON.png"))
     
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
 
@@ -33,4 +33,4 @@ def RECUPERA(root, mainFrame):
     Entry(mainFrame, width = 14, borderwidth = 2, textvariable = nuev2, font=("Inter", 22), relief="flat").place(x = 95, y = 415)
     
 ##############################    
-    Button(mainFrame, text = "Continuar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: nuev_rec.NUEVO_INIC_REC(root, mainFrame)).place(x = 105, y = 515)
+    Button(mainFrame, text = "Continuar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: nuevo_rec.NUEVO_INIC_REC(root, mainFrame)).place(x = 105, y = 515)
