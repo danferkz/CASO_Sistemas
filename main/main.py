@@ -13,7 +13,7 @@ root.iconbitmap(my_path + "\main\images\APP.ico")
 
 def quit_me():
     root.quit()
-    root.destroy()
+    root.destroy() 
 
 root.protocol("WM_DELETE_WINDOW", quit_me)
 root.mainloop()
