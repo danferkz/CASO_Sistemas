@@ -5,6 +5,8 @@ import windows_app.LOG as log
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
+import tkinter as tk
+
 
 #* Estructura de la ventana del Dashboard general.
 def horario(root, mainframe):
@@ -46,4 +48,4 @@ def Selec_Rooty():
         "dos_cua.pantalla4x4(root, mainFrame)"
     
 
-#* Estructura de la ventana del Dashboard general.
+# 
