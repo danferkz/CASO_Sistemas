@@ -36,29 +36,3 @@ def REC(root, mainFrame):
     #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
     Button(mainFrame, text = "Registrarse", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 100, y = 490)
 
-"""
-def recargas(root, mainFrame):
-    root.title("Recargas")
-
-    mainFrame.destroy()
-    mainFrame = Frame()
-    mainFrame.config(width = "480", height = "1034")
-    mainFrame.pack()
-    my_path = readfiles.Route()
-    
-    global logo
-    
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\REGISTER_IN_US_NEW.png"))
-    
-    Label(mainFrame, image = logo).place(relx = 0, rely = 0)
-##############################
-    Label(mainFrame, text = "Registro",font=("Inter", 16)).place(x = 300, y = 425)    
-    aA_Aa3_3 = StringVar()
-    Entry(mainFrame, width = 25, borderwidth = 2, textvariable = aA_Aa3_3,font=("Inter", 30)).place(x = 150, y = 300)
-    
-################################
-    
-    #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Cancelar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: inic.inici(root, mainFrame)).place(x = 300, y = 500)
-    
-"""

@@ -22,13 +22,13 @@ def MET_PAGO(root, mainFrame):
 ###############################
     
     visa = StringVar()
-    Checkbutton(mainFrame, width = 1, textvariable = visa, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 30, y = 240)
+    Checkbutton(mainFrame, textvariable = visa, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 30, y = 240)
     mastercard = StringVar()
-    Checkbutton(mainFrame, width = 1, textvariable = mastercard, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 180, y = 240)
+    Checkbutton(mainFrame, textvariable = mastercard, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 180, y = 240)
     dinners = StringVar()
-    Checkbutton(mainFrame, width = 1, textvariable = dinners, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 30, y = 340)
+    Checkbutton(mainFrame, textvariable = dinners, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 30, y = 340)
     american = StringVar()
-    Checkbutton(mainFrame, width = 1, textvariable = american, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 180, y = 340)
+    Checkbutton(mainFrame, textvariable = american, bg="#FFFEFD",font=("Inter", 22), relief="flat").place(x = 180, y = 340)
     
 ################################
     
