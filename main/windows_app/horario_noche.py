@@ -17,11 +17,8 @@ def horario(root, mainFrame):
     mainFrame.config(width = "380", height = "676")
     mainFrame.pack()
     my_path = readfiles.Route()
-
     global logo, vaerDropBox
-
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO1.png"))
-
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO3.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
     
     

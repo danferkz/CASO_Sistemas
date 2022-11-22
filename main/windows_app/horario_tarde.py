@@ -20,7 +20,7 @@ def horario(root, mainFrame):
 
     global logo, vaerDropBox
 
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO1.png"))
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO2.png"))
 
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
     

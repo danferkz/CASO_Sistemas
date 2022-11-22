@@ -26,7 +26,7 @@ def horario(root, mainFrame):
     
 ############################## 
     categoriesNUMEROSvar = ['Dia', 'Tarde', 'Noche']
-    Label(mainFrame, text = "SELECCIÓN DE FASES DEL DÍA : ", relief= "flat", bg="#EFFBFB", font=("Inter", 10)).place(x = 90, y = 200)
+    Label(mainFrame, text = "SELECCIÓN DE FASES DEL DÍA : ", relief= "flat", bg="#EFFBFB", font=("Inter", 10)).place(x = 50, y = 100)
     vaerDropBox= ttk.Combobox(mainFrame,font=("Inter", 16,"bold"),width = 10)
     vaerDropBox.set("Fases del Día")
 
