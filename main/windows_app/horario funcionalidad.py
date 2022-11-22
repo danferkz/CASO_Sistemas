@@ -39,15 +39,16 @@ def horario(root, mainframe):
 #RUTAS
 def Selec_Rooty():
     a = vaerDropBox.get()
+    my_path = readfiles.Route()
     
     if a == 'Dia':
-        "dos_cua.pantalla4x4(root, mainFrame)"
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO (mañana).png"))
     elif a == 'Tarde':
-        "dos_cua.pantalla4x4(root, mainFrame)"
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO (tarde).png"))
     else:
-        "dos_cua.pantalla4x4(root, mainFrame)"
+        logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO (noche).png"))
     
 
-#* Botón desplegable de las fases del día del horario
+
 
 
