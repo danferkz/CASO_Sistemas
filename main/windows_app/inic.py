@@ -14,7 +14,6 @@ def Login(root, mainFrame):
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\INICIAL.png"))
     
     
-    
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
     
     Button(mainFrame, text = "REGISTRO", bg="#a0d3d8", width = 10, height = 3, relief="flat",fg="#FFFEFD",font=("Inter", 15,"bold"), command = lambda: rec.REC(root, mainFrame)).place(x = 125, y = 360)
