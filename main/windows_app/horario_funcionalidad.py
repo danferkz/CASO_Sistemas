@@ -32,7 +32,7 @@ def horario(root, mainframe):
     vaerDropBox.place(x = 100, y = 350)
     
     
-    Button(mainframe, text = "Continuar", width = 25,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 100, y = 400)
+    Button(mainframe, text = "Continuar", width = 15,relief="flat",font=("Inter", 12,"bold"),bg="#000000",fg="#ffffff", command = lambda: Selec_Rooty()).place(x = 90, y = 350)
     
 
 
