@@ -5,12 +5,13 @@ import windows_app.LOG as log
 import windows_app.hora_dia as dia
 import windows_app.horario_tarde as tarde
 import windows_app.horario_noche as noche
+import windows_app.hora_dia as dia
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
 
 
-def horario(root, mainFrame):
+def horarioBien(root, mainFrame):
     root.title("Horarios de líneas de tren")
     mainFrame.destroy()
     mainFrame = Frame()
@@ -18,9 +19,13 @@ def horario(root, mainFrame):
     mainFrame.pack()
     my_path = readfiles.Route()
     global logo, vaerDropBox
-    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO1.png"))
+
+
+    logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_BIENVENIDA.png"))
+
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
     
+##############################
 ############################## 
 
     categoriesNUMEROSvar = ['Dia', 'Tarde', 'Noche']
