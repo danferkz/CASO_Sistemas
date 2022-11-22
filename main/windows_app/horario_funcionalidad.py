@@ -39,7 +39,7 @@ def horario(root, mainframe):
 #RUTAS
 def Selec_Rooty():
     a = vaerDropBox.get()
-    my_path = readfiles.Route()
+    my_path = readfiles.Route() 
     
     if a == 'Dia':
         logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\HORARIO_(mañana).png"))
