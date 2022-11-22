@@ -13,15 +13,9 @@ root.iconbitmap(my_path + "\main\images\APP.ico")
 #* Función para cerrar y destruir la ventana al cerrar la aplicación externamente.
 def quit_me():
     root.quit()
-<<<<<<< HEAD
     root.destroy()
     
     
-    
-    
-=======
-    root.destroy() 
->>>>>>> b76de1c5fef8965baf11e00cb6dd3e71faa6b719
 
 root.protocol("WM_DELETE_WINDOW", quit_me)
 root.mainloop()
