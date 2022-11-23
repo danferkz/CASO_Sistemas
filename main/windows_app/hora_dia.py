@@ -9,7 +9,7 @@ import windows_app.hora_dia as dia
 import windows_app.HOME as ho
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
-    
+
 
 #* Estructura de la ventana del Dashboard general.
 
