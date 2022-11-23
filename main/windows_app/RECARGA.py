@@ -5,7 +5,6 @@ import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
     
-
 #* Estructura de la ventana del Dashboard general.
 
 def RECARGA_TRAIN(root, mainFrame):

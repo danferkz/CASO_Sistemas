@@ -28,7 +28,4 @@ def HOM(root, mainFrame):
     Button(mainFrame, text = "RECARGA", width = 15,relief="flat",bg = "#03989e", font=("Inter", 15,"bold"), command = lambda: rebien.BIEN_REC(root, mainFrame)).place(x = 95, y = 265)
     Button(mainFrame, text = "NOTIFICACIONES", width = 15,relief="flat",bg = "#03989e", font=("Inter", 15,"bold"), command = lambda: noti.VisNo_otifica(root, mainFrame)).place(x = 95, y = 400)
     Button(mainFrame, text = "RESERVA", width = 15,relief="flat",bg = "#03989e", font=("Inter", 15,"bold"), command = lambda: reser.RESERVA(root, mainFrame)).place(x = 95, y = 530)
-################################
-    
-    #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    #Button(mainFrame, text = "Cancelar", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: inic.inici(root, mainFrame)).place(x = 200, y = 600)
+image.png
