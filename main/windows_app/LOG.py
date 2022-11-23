@@ -31,8 +31,3 @@ def LOG(root, mainFrame):
     
     Button(mainFrame, text = "Ingresar", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: bienv.BIENVN(root, mainFrame)).place(x = 100, y = 440)
     Button(mainFrame, text = "Olvidé mi contraseña", width = 18, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: recp_con.RECUPERA(root, mainFrame)).place(x = 80, y = 560)
-
-################################
-    
-    #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    #Button(mainFrame, text = "INGRESAR", width = 10,relief="flat",font=("Inter", 15,"bold"), command = lambda: ho.HOM(root, mainFrame)).place(x = 300, y = 500)
