@@ -1,6 +1,6 @@
 from tkinter import *
 import windows_app.RECARGA as reca
-import windows_app.RECARGA as recar_train
+import windows_app.ENVIONO as envia
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
 from tkinter import Tk, Label, Button,Entry, Frame, END
@@ -9,7 +9,7 @@ from tkinter import Tk, Label, Button,Entry, Frame, END
 #* Estructura de la ventana del Dashboard general.
 
 def VisNo_otifica(root, mainFrame):
-    root.title("RECARGAS")
+    root.title("NOTIFICACIONES")
     mainFrame.destroy()
     mainFrame = Frame(root)
     mainFrame.config(width = "380", height = "676")
@@ -18,10 +18,8 @@ def VisNo_otifica(root, mainFrame):
     global logo
     logo = ImageTk.PhotoImage(Image.open(my_path + "\main\images\dnOTIFINES_uno.png"))
     Label(mainFrame, image = logo).place(relx = 0, rely = 0)
-###############################
+
 
     
-################################
-    
-    #Button(mainFrame, text = "Ejecutar",command = lambda: resultado.Resol_(root, mainFrame)).place(x = 800, y = 684)
-    Button(mainFrame, text = "Registrarse", width = 10, bg="#FFFEFD", relief="flat",font=("Inter", 15,"bold"), command = lambda: reca.RECARGA_TRAIN(root, mainFrame)).place(x = 100, y = 490)
+
+    Button(mainFrame, text = "ENVIAR Incidencia????", width = 10, bg = "#03989e", relief="flat",font=("Inter", 15,"bold"), command = lambda: envia.Enviar_NOti(root, mainFrame)).place(x = 100, y = 490)
