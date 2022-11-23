@@ -1,7 +1,4 @@
 from tkinter import *
-import windows_app.inic as inic
-import windows_app.INI_SE as se
-import windows_app.HOME as ho
 import windows_app.BIENV as bienv
 import helpers.readfiles as readfiles
 from PIL import Image, ImageTk
